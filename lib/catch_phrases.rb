@@ -15,7 +15,6 @@ def link
    puts "It's Dangerous To Go Alone! Take This."
     expect{link}.to output("It's Dangerous To Go Alone! Take This.\n").to_stdout
   end
-end
 
 describe "all_phrases" do
   it "takes in an argument and puts out the catch phrase" do
