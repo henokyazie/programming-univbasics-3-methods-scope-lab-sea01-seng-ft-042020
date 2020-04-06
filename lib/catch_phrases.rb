@@ -11,8 +11,10 @@ def toadstool
   puts status
 end
 
-def link 
-  puts "It's Dangerous To Go Alone! Take This."
+describe "link" do
+  it "puts out 'It's Dangerous To Go Alone! Take This.'" do
+    expect{link}.to output("It's Dangerous To Go Alone! Take This.\n").to_stdout
+  end
 end
 
 describe "all_phrases" do
